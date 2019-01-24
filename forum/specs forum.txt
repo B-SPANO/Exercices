@@ -1,0 +1,15 @@
+Je te propose de reprendre le code que tu as fais sur la notion de conteneur - message pour en faire un vrai forum :
+
+
+-> chaque forum a :
+
+        //ses propres metadonnees que je te laisse proposer (last message(label/auteur/date), nb msg)
+        //un type (prendra la forme d'un Topic) (FAQ / Question ouverte / Discussion, ..., ce type doit etre administrable (l'administrateur peut en rajouter un)
+        //un statut (actif, en cours ou ouvert, resolu)
+une liste de gestionnaires (ont des droits sur le forum) SET PERMISSIONS
+        //des fonctionnalite pour supprimer les messages des autres ou les editer 
+->(on doit avoir un historique de l'edition de chaque message et je te laisse faire une propostion pour gerer cela) (M2M Throught M2M)
+
+-> pour les messages : 
+
+        //rien a faire a part rajouter des metadonnees qui enrichiraient le contenu. List metadonnees a definir

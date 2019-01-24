@@ -1,0 +1,14 @@
+{% extends "forum/base.html" %}
+
+{% block title %}Post{% endblock title %}
+
+{% block content %}
+
+    <p><a href="{% url 'topic' post.topic_id %}">Retour</a></p>    
+    <p>{{ post.body }}</p>
+    <a href='edit'>Edit Post</a>
+
+    <a href="{% url 'delete_post' post.id %}">Supprimer le message</a>
+
+
+{% endblock content %}

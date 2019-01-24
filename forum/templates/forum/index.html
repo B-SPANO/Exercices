@@ -1,0 +1,20 @@
+{% extends "forum/base.html" %}
+
+{% block title %}Forum Index{% endblock title %}
+
+{% block content %}
+
+
+    
+
+{% for forum in forums %}
+    <a href=" {{ forum.id }}"><h2>{{ forum }}</h2></a>
+    <p>Dernier message:<br> {{forum.last_post}}</p>
+    <p>Topic: {{ forum.topics.count }}</p>
+    <p>Posts: {{ forum.posts.count }}</p>
+{% endfor %}
+<br>
+<p>Nombre total de Sujets: {{ total_topic_count }}</p>
+<p>Nombre total de Messages: {{ total_post_count }}</p>
+
+{% endblock content %}

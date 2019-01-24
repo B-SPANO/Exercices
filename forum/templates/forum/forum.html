@@ -1,0 +1,19 @@
+{% extends "forum/base.html" %}
+
+{% block title %}Forum Index{% endblock title %}
+
+{% block content %}
+    
+
+    <h2>{{ forum }}</h2>
+    {% for topic in topics %}
+        <a href=" topic/{{ topic.id }}"><p>{{ topic }}</p></a>
+    {% endfor %}
+    <p>Posts: {{ forum.post_count }}</p>
+    {% for moderator in moderators %}
+        <p>Moderators: {{moderator}}</p>
+    {% endfor %}
+
+    <a href="topic/add">Ajouter un Sujet</a>
+
+{% endblock content %}
