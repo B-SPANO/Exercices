@@ -1,11 +1,12 @@
 {% extends "forum/base.html" %}
+{% load i18n %}
 
 {% block content %}
 
 
 <form method="post">{% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Update">
+    <input type="submit" value={% trans "Update" %}>
 </form>
 
 {% endblock content %}

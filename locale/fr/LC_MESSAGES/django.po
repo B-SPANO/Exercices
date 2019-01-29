@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-28 14:48+0100\n"
+"PO-Revision-Date: 2019-01-28 12:03+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.1\n"
+
+#: .\forum\models.py:27 .\forum\models.py:85 .\forum\models.py:128
+msgid "User"
+msgstr "Utilisateur"
+
+#: .\forum\models.py:29
+msgid "Location"
+msgstr "Localisation"
+
+#: .\forum\models.py:30 .\forum\models.py:56 .\forum\models.py:87
+msgid "Post count"
+msgstr "Nombre de Messages"
+
+#: .\forum\models.py:35
+msgid "Profile"
+msgstr "Profil"
+
+#: .\forum\models.py:36
+msgid "Profiles"
+msgstr "Profils"
+
+#: .\forum\models.py:53
+msgid "Name"
+msgstr "Nom"
+
+#: .\forum\models.py:54
+msgid "Description"
+msgstr "Description"
+
+#: .\forum\models.py:55
+msgid "Moderators"
+msgstr "Modérateurs"
+
+#: .\forum\models.py:57
+msgid "Topic count"
+msgstr "Nombre de Sujets"
+
+#: .\forum\models.py:64 .\forum\models.py:82
+msgid "Forum"
+msgstr "Forum"
+
+#: .\forum\models.py:65
+msgid "Forums"
+msgstr "Forums"
+
+#: .\forum\models.py:83
+msgid "Subject"
+msgstr "Sujet"
+
+#: .\forum\models.py:84 .\forum\models.py:129
+msgid "Created"
+msgstr "Crée"
+
+#: .\forum\models.py:86
+msgid "Closed"
+msgstr "Fermé"
+
+#: .\forum\models.py:99
+msgid "Topic"
+msgstr "Sujet"
+
+#: .\forum\models.py:100 .\forum\models.py:127
+msgid "Topics"
+msgstr "Sujets"
+
+#: .\forum\models.py:130
+msgid "Updated"
+msgstr "Mis a jour"
+
+#: .\forum\models.py:132
+msgid "Updated by"
+msgstr "mis a jour par"
+
+#: .\forum\models.py:135
+msgid "Message"
+msgstr "Message"
+
+#: .\forum\models.py:140
+msgid "Post"
+msgstr "Message"
+
+#: .\forum\models.py:141 .\forum\templates\forum\forum.html:14
+msgid "Posts"
+msgstr "Messages"
+
+#: .\forum\templates\forum\add_post.html:7
+#: .\forum\templates\forum\add_topic.html:8
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: .\forum\templates\forum\forum.html:10
+msgid "topic"
+msgstr "Sujet"
+
+#: .\forum\templates\forum\forum.html:19
+msgid "Add a Topic"
+msgstr "Ajouter un Sujet"
+
+#: .\forum\templates\forum\index.html:18
+msgid "Total Subjects:"
+msgstr "Total des Sujets"
+
+#: .\forum\templates\forum\index.html:19
+msgid "Total Posts:"
+msgstr "Total des messages"
+
+#: .\forum\templates\forum\logout.html:7
+msgid "Thank you for your visit!"
+msgstr "Merci pour votre visite !"
+
+#: .\forum\templates\forum\logout.html:8
+msgid "You have been successfully logged out."
+msgstr "Vous avez été déconnecté avec succes"
+
+#: .\forum\templates\forum\logout.html:9
+msgid "See you soon!"
+msgstr "Au revoir !"
+
+#: .\forum\templates\forum\post.html:8
+msgid "Back"
+msgstr "Retour"
+
+#: .\forum\templates\forum\post.html:10
+msgid "Edit Post"
+msgstr "Modifier"
+
+#: .\forum\templates\forum\post.html:12
+msgid "Delete Post"
+msgstr "Supprimer"
+
+#: .\forum\templates\forum\post_confirmation_delete.html:6
+msgid "Are you sure you want to delete:"
+msgstr "Êtes vous sûr de vouloir supprimer:"
+
+#: .\forum\templates\forum\post_confirmation_delete.html:7
+#: .\forum\templates\forum\topic_confirmation_delete.html:7
+msgid "Confirm"
+msgstr "Valider"
+
+#: .\forum\templates\forum\post_form.html:9
+msgid "Update"
+msgstr "Mis a jour"
+
+#: .\forum\templates\forum\topic.html:4
+msgid "Post Index"
+msgstr "Index des Messages"
+
+#: .\forum\templates\forum\topic.html:10
+msgid "Posts:"
+msgstr "Messages"
+
+#: .\forum\templates\forum\topic.html:12
+msgid "Subscription"
+msgstr "Description"
+
+#: .\forum\templates\forum\topic.html:14
+msgid "Sunmit Subscription"
+msgstr "Soumettre une Description"
+
+#: .\forum\templates\forum\topic.html:21
+msgid "Submit a Post"
+msgstr "Valider le message"
+
+#: .\forum\templates\forum\topic.html:23
+msgid "Delete Topic"
+msgstr "Supprimer le Sujet"
+
+#: .\forum\templates\forum\topic_confirmation_delete.html:6
+msgid "Are you sure you want to delete"
+msgstr "Êtes vous sûr de vouloir supprimer:"

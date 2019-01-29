@@ -11,9 +11,9 @@ router.register(r'rest/user', views.UserViewset,)
 
 urlpatterns = [
 
-    # Auth
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/login/', auth_views.LoginView.as_view(template_name='forum/login.html')),
+    # # Auth
+    # path('accounts/', include('django.contrib.auth.urls')),
+    # path('accounts/login/', auth_views.LoginView.as_view(template_name='forum/login.html')),
 
     #User
     path('users/', views.UserCreate.as_view()),
@@ -27,14 +27,19 @@ urlpatterns = [
 
     # Topic
     re_path(r'^\d+/topic/(?P<topic_id>\d+)/$', views.show_topic, name='topic'),
-    re_path(r'^(?P<forum_id>\d+)/topic/add/$', views.AddTopic.as_view(template_name="forum/add_topic.html"), name='add_topic'),
-    re_path(r'^topic/(?P<pk>\d+)/$', views.DeleteTopic.as_view(template_name="forum/topic_confirmation_delete.html"), name='delete_topic'),
+    re_path(r'^(?P<forum_id>\d+)/topic/add/$', views.AddTopic.as_view(
+        template_name="forum/add_topic.html"), name='add_topic'),
+    re_path(r'^topic/(?P<pk>\d+)/$', views.DeleteTopic.as_view(
+        template_name="forum/topic_confirmation_delete.html"), name='delete_topic'),
 
     # Post
-    re_path(r'^post/(?P<pk>\d+)/$', views.ShowPost.as_view(template_name="forum/post.html"), name='post'),
-    re_path(r'^(?P<forum_id>\d+)/topic/(?P<topic_id>\d+)/post/add/$', views.AddPost.as_view(template_name="forum/add_post.html"), name='add_post'),
+    re_path(r'^post/(?P<pk>\d+)/$', views.ShowPost.as_view(
+        template_name="forum/post.html"), name='post'),
+    re_path(r'^(?P<forum_id>\d+)/topic/(?P<topic_id>\d+)/post/add/$', views.AddPost.as_view(
+        template_name="forum/add_post.html"), name='add_post'),
     re_path(r'^post/(?P<pk>\d+)/edit/$', views.EditPost.as_view(), name='edit_post'),
-    re_path(r'^post/(?P<pk>\d+)/delete/$', views.DeletePost.as_view(template_name="forum/post_confirmation_delete.html"), name='delete_post'),
+    re_path(r'^post/(?P<pk>\d+)/delete/$', views.DeletePost.as_view(
+        template_name="forum/post_confirmation_delete.html"), name='delete_post'),
 
 ] + [
     # API login

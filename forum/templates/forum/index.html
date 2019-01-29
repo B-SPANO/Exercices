@@ -1,4 +1,5 @@
 {% extends "forum/base.html" %}
+{% load i18n %}
 
 {% block title %}Forum Index{% endblock title %}
 
@@ -14,7 +15,7 @@
     <p>Posts: {{ forum.posts.count }}</p>
 {% endfor %}
 <br>
-<p>Nombre total de Sujets: {{ total_topic_count }}</p>
-<p>Nombre total de Messages: {{ total_post_count }}</p>
+<p>{% trans "Total Subjects:" %} {{ total_topic_count }}</p>
+<p>{% trans "Total Posts:" %} {{ total_post_count }}</p>
 
 {% endblock content %}

@@ -15,8 +15,8 @@ def post_saved(instance, **kwargs):
     if created:
         topic.last_post = post
         topic.post_count = topic.posts.count()
-        profile = post.user.forum_profile
-        profile.post_count = post.user.posts.count()
+        profile = post.profile
+        profile.post_count = post.profile.posts.count()
         profile.save(force_update=True)
     topic.save(force_update=True)
 

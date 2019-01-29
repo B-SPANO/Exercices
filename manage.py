@@ -19,7 +19,16 @@ if __name__ == '__main__':
         source = [arg for arg in sys.argv[sys.argv.index("test"):] if arg in settings.INSTALLED_APPS]
         if not source:
             source = settings.INSTALLED_APPS[0:1]
-        omit=list(set(settings.INSTALLED_APPS)-set(source))
+        omit = list(set(settings.INSTALLED_APPS)-set(source))
+        COVERAGE_OMIT = [
+            "*/migrations/*",
+            "*/commands/*",
+            "**/__init__.py",
+            "*/apps.py",
+            "*/tests/*",
+            "**/tests.py",
+            "*/src/*",
+            ]
         print(source)
         print(omit)
         import coverage

@@ -1,25 +1,26 @@
 {% extends "forum/base.html" %}
+{% load i18n %}
 
-{% block title %}Post Index{% endblock title %}
+{% block title %}{% trans "Post Index" %}{% endblock title %}
 
 {% block content %}
     
 
     <h2>{{ topic }}</h2>
-    <p>Posts: {{ topic.post_count }}</p>
+    <p>{% trans "Posts:" %} {{ topic.post_count }}</p>
     <form action="/forum/sub/" method="post">
-    <p>Subscription {{ form }}</p>
+    <p>{% trans "Subscription" %} {{ form }}</p>
     {% csrf_token %}
-    <input type="submit" value="Valider Subscription">
+    <input type="submit" value={% trans "Sunmit Subscription" %}>
     </form>
     {% for post in posts %}
         <p><b>{{ post.user }}</b></p>
         <p><a href="{% url 'post' post.id %}"><u>{{ post.created }}</u></a></p>
         <p>{{ post.body }}</p><br>  
     {% endfor %}
-    <p><a href="{% url 'add_post' topic.forum_id topic.id %}">Ecrire un message</a><p/>
+    <p><a href="{% url 'add_post' topic.forum_id topic.id %}">{% trans "Submit a Post" %}</a><p/>
     {% if post_count == 0 %}
-        <a href="{% url 'delete_topic' topic.id %}">Supprimer le topic</a>
+        <a href="{% url 'delete_topic' topic.id %}">{% trans "Delete Topic" %}</a>
     {% endif %}
 
 

@@ -1,4 +1,5 @@
 {% extends "forum/base.html" %}
+{% load i18n %}
 
 {% block title %}Forum Index{% endblock title %}
 
@@ -6,14 +7,17 @@
     
 
     <h2>{{ forum }}</h2>
+    {% trans "topic" as topic %}
     {% for topic in topics %}
         <a href=" topic/{{ topic.id }}"><p>{{ topic }}</p></a>
     {% endfor %}
-    <p>Posts: {{ forum.post_count }}</p>
+    <p>{% trans "Posts" %} {{ forum.post_count }}</p>
     {% for moderator in moderators %}
         <p>Moderators: {{moderator}}</p>
     {% endfor %}
 
-    <a href="topic/add">Ajouter un Sujet</a>
+    <a href="topic/add">{% trans "Add a Topic" %}</a>
+
+
 
 {% endblock content %}

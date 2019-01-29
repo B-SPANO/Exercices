@@ -24,5 +24,11 @@ if settings.DEBUG:
         path('__debug__/', include(debug_toolbar.urls)),
     ] + [
     path('admin/', admin.site.urls),
+    
+    # Auth
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/login/', auth_views.LoginView.as_view(template_name='forum/login.html')),
+
     path('forum/', include('forum.urls')),
-]
+    path('rosetta/', include('rosetta.urls')),
+    ]

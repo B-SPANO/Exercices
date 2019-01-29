@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'crispy_forms',
     'django_nose',
+    'rosetta',
 ]
-    
+
 
 
 # Use nose to run all tests
@@ -130,7 +131,7 @@ CELERY_TIMEZONE = 'Europe/Paris'
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
@@ -145,3 +146,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOCALE_PATHS = (BASE_DIR + "/locale/",)
